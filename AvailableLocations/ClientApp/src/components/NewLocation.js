@@ -22,16 +22,18 @@ function NewLocation({ showLocation}) {
         newdata.endTime = endValue;
         newdata.location = location.current.value;
         setData(newdata);
-        console.log(newdata);
         const url = "http://localhost:5264/api/location?startTime=" + newdata.startTime + "&endTime=" + newdata.endTime + "&location=" + newdata.location;
-        Axios.post(url, {
-            startTime: startvalue,
-            endTime: endValue,
-            location: location.current.value
-        }).then(res => {
-            console.log(res);
-        });
-        location.current.value = '';
+        Axios.post(url).then(res => {
+            location.current.value = '';
+            showLocation(false);
+        }).catch(function (error) {
+            console.log("error");
+        }
+        );
+       
+    }
+
+    const handleCancel = () => {
         showLocation(false);
     }
     return (
@@ -52,6 +54,9 @@ function NewLocation({ showLocation}) {
             </div>
             <div>
                 <button className="px-6 py-2 rounded-md btn btn-primary text-stone-50" onClick={handleSave}>Save</button>
+            </div>
+            <div class="p-4">
+                <button className="p-6 py-2 rounded-md btn btn-primary text-stone-50" onClick={handleCancel}>Cancel</button>
             </div>
         </section>
 

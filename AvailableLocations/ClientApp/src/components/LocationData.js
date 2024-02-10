@@ -5,7 +5,6 @@ import { FaSearch } from "react-icons/fa";
 
 function LocationData({ results}) {
     const [search, setSearch] = useState('');
-    /*const [results, setResults] = useState([]);*/
    
     return (
         <Container>

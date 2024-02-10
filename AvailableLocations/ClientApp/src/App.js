@@ -12,7 +12,7 @@ function App() {
     useEffect(() => {
         const url = "http://localhost:5264/api/location?startTime=10:00:00.0000000&endTime=13:00:00.0000000";
 
-        const fetchData = async (value) => {
+        const fetchData = async () => {
             try {
                 const response = await fetch(url);
                 const json = await response.json();
@@ -22,7 +22,7 @@ function App() {
             }
         };
         fetchData();
-    }, []);
+    }, [results]);
     function handleLocation(showValue) {
         if (showValue === false) {
             setShow(showValue);
