@@ -1,0 +1,23 @@
+﻿
+
+#user-input {
+    padding: 1rem;
+    max-width: 70rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px #ddd;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#locationInput {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    height:2rem;
+}

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvailableLocations", "AvailableLocations\AvailableLocations.csproj", "{16C3FE99-2FB1-488D-BF14-CDE39723C009}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationAPI", "LocationAPI\LocationAPI.csproj", "{C2844AD8-B070-4106-829B-7C3BFC41F910}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{16C3FE99-2FB1-488D-BF14-CDE39723C009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16C3FE99-2FB1-488D-BF14-CDE39723C009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16C3FE99-2FB1-488D-BF14-CDE39723C009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2844AD8-B070-4106-829B-7C3BFC41F910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2844AD8-B070-4106-829B-7C3BFC41F910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2844AD8-B070-4106-829B-7C3BFC41F910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2844AD8-B070-4106-829B-7C3BFC41F910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
